@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>VisionGate</title>
+
+  <meta
+    name="description"
+    content="VisionGate é um sistema inteligente de leitura de placas, monitoramento de acesso, dashboard operacional, histórico, blacklist, green list e controle de cancela."
+  />
+
+  <link rel="icon" href="images/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <div class="scroll-progress"></div>
+  <div class="mouse-glow"></div>
+  <div class="page-noise"></div>
+
+  <header class="topbar">
+    <a href="#" class="brand-small" aria-label="VisionGate">
+      <img src="images/icon.png" alt="VisionGate Logo" />
+      <span>VisionGate</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#visao-geral">Visão geral</a>
+      <a href="#login">Login</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#barra-lateral">Barra lateral</a>
+      <a href="#fluxo">Fluxo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="#tour" class="top-cta">Ver tour</a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#visao-geral">Visão geral</a>
+    <a href="#login">Login</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#barra-lateral">Barra lateral</a>
+    <a href="#fluxo">Fluxo</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <main>
+    <section class="hero" id="visao-geral">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="video/visiongate-bg.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+
+      <div class="hero-content reveal">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          Tour visual do sistema VisionGate
+        </div>
+
+        <div class="main-brand">
+          <h1 class="main-title">
+            <span class="vision-text">VISION</span>
+            <img src="images/icon.png" alt="VisionGate Logo" class="middle-logo" />
+            <span class="gate-text">GATE</span>
+          </h1>
+
+          <p class="main-subtitle">SMART ACCESS MONITORING</p>
+        </div>
+
+        <h2>
+          ENTENDA O VISIONGATE POR DENTRO,
+          TELA POR TELA, FUNÇÃO POR FUNÇÃO.
+        </h2>
+
+        <p class="hero-description">
+          Esta página apresenta o funcionamento completo do VisionGate:
+          tela de login, dashboard principal, barra lateral, monitoramento,
+          histórico, listas de acesso, saúde do sistema, controle de cancela
+          e exportação de relatórios.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#tour" class="btn primary">Começar passo a passo</a>
+
+          <a href="#dashboard" class="btn secondary">
+            <span class="play-icon">▶</span>
+            Ver dashboard
+          </a>
+        </div>
+
+        <div class="hero-tags">
+          <span>Login seguro</span>
+          <span>Dashboard em tempo real</span>
+          <span>OCR de placas</span>
+          <span>Controle de cancela</span>
+        </div>
+      </div>
+
+      <div class="hero-dashboard reveal" aria-label="Dashboard VisionGate">
+        <div class="browser-frame">
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <img
+            src="images/dashboard-visiongate.png"
+            alt="Dashboard real do VisionGate"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="trusted-strip reveal">
+      <canvas class="trusted-particles" id="trustedParticles"></canvas>
+
+      <span>Documentação visual para apresentar o sistema a</span>
+
+      <div>
+        <strong>Clientes</strong>
+        <strong>Empresas</strong>
+        <strong>Portarias</strong>
+        <strong>Segurança</strong>
+        <strong>Recrutadores</strong>
+      </div>
+    </section>
+
+    <section class="section" id="tour">
+      <div class="section-header reveal">
+        <span>Passo a passo</span>
+        <h2>COMO O VISIONGATE FUNCIONA NA PRÁTICA.</h2>
+        <p>
+          O sistema foi organizado para que o operador consiga acessar, monitorar,
+          registrar, consultar e controlar a operação de forma simples.
+        </p>
+      </div>
+
+      <div class="flow-line reveal">
+        <div><strong>01</strong><span>Login</span></div>
+        <div><strong>02</strong><span>Dashboard</span></div>
+        <div><strong>03</strong><span>Monitoramento</span></div>
+        <div><strong>04</strong><span>Histórico</span></div>
+        <div><strong>05</strong><span>Relatórios</span></div>
+      </div>
+    </section>
+
+    <section class="section split" id="login">
+      <div class="reveal">
+        <span class="section-label">01 · Tela de login</span>
+        <h2>ACESSO INICIAL DO OPERADOR.</h2>
+        <p>
+          A tela de login é a primeira camada de acesso ao VisionGate. Ela impede
+          que pessoas não autorizadas entrem no sistema e separa a operação por
+          usuário, permitindo uma estrutura mais segura para portarias, empresas
+          e ambientes controlados.
+        </p>
+
+        <div class="demo-list">
+          <div>
+            <strong>Usuário</strong>
+            <span>Campo onde o operador informa o nome de acesso cadastrado.</span>
+          </div>
+
+          <div>
+            <strong>Senha</strong>
+            <span>Protege o sistema contra acessos não autorizados.</span>
+          </div>
+
+          <div>
+            <strong>Entrar</strong>
+            <span>Valida os dados e libera o acesso à dashboard principal.</span>
+          </div>
+
+          <div>
+            <strong>Identidade visual</strong>
+            <span>Apresenta a marca VisionGate antes do operador iniciar o monitoramento.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-panel reveal">
+        <img src="images/login-visiongate.png" alt="Tela de login do VisionGate" />
+      </div>
+    </section>
+
+    <section class="section demo-section" id="dashboard">
+      <div class="section-header reveal">
+        <span>02 · Dashboard principal</span>
+        <h2>A CENTRAL DE CONTROLE DO VISIONGATE.</h2>
+        <p>
+          A dashboard concentra tudo que o operador precisa acompanhar: câmera,
+          OCR, última placa lida, alertas, status do sistema, banco de dados,
+          cancela e relatórios.
+        </p>
+      </div>
+
+      <div class="demo-grid">
+        <div class="demo-image reveal">
+          <div class="browser-frame">
+            <div class="browser-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <img
+              src="images/dashboard-visiongate.png"
+              alt="Dashboard do VisionGate com campos explicados"
+            />
+          </div>
+        </div>
+
+        <div class="demo-content reveal">
+          <h3>O QUE CADA ÁREA REPRESENTA</h3>
+          <p>
+            A tela foi criada para operação em tempo real. O operador seleciona
+            a câmera, inicia o OCR, acompanha a última placa identificada e
+            verifica se há alertas ou falhas no sistema.
+          </p>
+
+          <div class="demo-list">
+            <div>
+              <strong>Câmera principal</strong>
+              <span>Área onde aparece a imagem da câmera selecionada para captura de veículos.</span>
+            </div>
+
+            <div>
+              <strong>Iniciar sistema</strong>
+              <span>Ativa o monitoramento e começa o processo de leitura automática por OCR.</span>
+            </div>
+
+            <div>
+              <strong>Parar sistema</strong>
+              <span>Interrompe o monitoramento quando a operação precisa ser pausada.</span>
+            </div>
+
+            <div>
+              <strong>Última placa lida</strong>
+              <span>Mostra a placa mais recente identificada pelo VisionGate.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="campos-dashboard">
+      <div class="section-header reveal">
+        <span>Campos da dashboard</span>
+        <h2>INDICADORES E FUNCIONALIDADES DA TELA PRINCIPAL.</h2>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Seletor de câmera</h3>
+          <p>Permite escolher qual câmera será usada no monitoramento, como câmera USB, IP ou outra fonte configurada.</p>
+          <ul>
+            <li>Seleciona a origem de vídeo</li>
+            <li>Facilita testes e troca de câmera</li>
+            <li>Prepara o OCR para a fonte correta</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Status do VisionGate</h3>
+          <p>Mostra se o sistema está parado, ativo, aguardando ou com alguma condição operacional importante.</p>
+          <ul>
+            <li>Indica sistema online/offline</li>
+            <li>Mostra OCR parado ou ativo</li>
+            <li>Ajuda o operador a entender o estado atual</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Modo OCR / Manual</h3>
+          <p>Permite alternar entre leitura automática por OCR e operação manual, útil quando a placa precisa ser registrada manualmente.</p>
+          <ul>
+            <li>OCR para leitura automática</li>
+            <li>Manual para correções</li>
+            <li>Mais controle em situações difíceis</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Total de leituras</h3>
+          <p>Conta quantas placas foram lidas durante a operação, ajudando a medir o volume de acessos monitorados.</p>
+          <ul>
+            <li>Resumo operacional</li>
+            <li>Controle de volume</li>
+            <li>Base para relatórios</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Alertas de blacklist</h3>
+          <p>Exibe alertas relacionados a placas restritas, suspeitas ou bloqueadas cadastradas na blacklist.</p>
+          <ul>
+            <li>Identificação de veículo restrito</li>
+            <li>Alerta visual ao operador</li>
+            <li>Auxílio para resposta rápida</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Imagens salvas</h3>
+          <p>Mostra quantas capturas foram armazenadas, permitindo comprovação visual dos registros feitos pelo sistema.</p>
+          <ul>
+            <li>Registro com imagem</li>
+            <li>Comprovação do evento</li>
+            <li>Consulta posterior</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Tempo em operação</h3>
+          <p>Indica há quanto tempo o sistema está aberto ou em funcionamento, útil para acompanhamento da sessão.</p>
+          <ul>
+            <li>Tempo de atividade</li>
+            <li>Controle da operação</li>
+            <li>Referência para auditoria</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Saúde do sistema</h3>
+          <p>Monitora CPU, memória RAM, disco, banco de dados, câmeras e OCR para mostrar a condição técnica do VisionGate.</p>
+          <ul>
+            <li>CPU e RAM</li>
+            <li>Banco conectado</li>
+            <li>Câmeras online</li>
+          </ul>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-glow"></div>
+          <h3>Controle da cancela</h3>
+          <p>Área destinada ao comando de abertura e fechamento da cancela, permitindo operação direta pela interface.</p>
+          <ul>
+            <li>Abrir cancela</li>
+            <li>Fechar cancela</li>
+            <li>Registrar comando executado</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="barra-lateral">
+      <div class="section-header reveal">
+        <span>03 · Barra lateral</span>
+        <h2>MENU DE NAVEGAÇÃO DO SISTEMA.</h2>
+        <p>
+          A barra lateral organiza as principais áreas do VisionGate e permite que
+          o operador acesse rapidamente cada módulo.
+        </p>
+      </div>
+
+      <div class="benefits">
+        <div class="reveal">
+          <h3>Dashboard</h3>
+          <p>Retorna para a tela principal, onde ficam câmera, OCR, status, última placa, alertas e indicadores.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Monitoramento</h3>
+          <p>Área focada na visualização e acompanhamento das câmeras configuradas no sistema.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Histórico</h3>
+          <p>Lista os registros de placas lidas, horários, imagens vinculadas e dados para consulta posterior.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Blacklist</h3>
+          <p>Cadastro de placas bloqueadas, suspeitas ou que devem gerar alerta quando forem detectadas.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Green List</h3>
+          <p>Lista de placas autorizadas, como moradores, funcionários, veículos internos ou acessos liberados.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Usuários</h3>
+          <p>Gerenciamento dos usuários que podem acessar o VisionGate, como administradores e operadores.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Auditoria</h3>
+          <p>Área para acompanhar ações realizadas no sistema, ajudando no controle e rastreabilidade.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Configurações</h3>
+          <p>Permite ajustar câmera, banco de dados, preferências, caminhos de salvamento e parâmetros do sistema.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Sobre</h3>
+          <p>Exibe informações do VisionGate, versão do sistema, identidade visual e dados do projeto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="fluxo">
+      <div class="reveal">
+        <span class="section-label">04 · Fluxo operacional</span>
+        <h2>DA CÂMERA AO RELATÓRIO.</h2>
+        <p>
+          O VisionGate recebe a imagem da câmera, processa a placa com OCR,
+          consulta as listas cadastradas, registra o evento no banco de dados,
+          salva a imagem quando necessário e permite exportar relatórios.
+        </p>
+
+        <div class="flow-line">
+          <div><strong>01</strong><span>Câmera</span></div>
+          <div><strong>02</strong><span>OCR</span></div>
+          <div><strong>03</strong><span>Listas</span></div>
+          <div><strong>04</strong><span>Registro</span></div>
+          <div><strong>05</strong><span>Relatório CSV</span></div>
+        </div>
+      </div>
+
+      <div class="image-panel reveal">
+        <img src="images/car-bg.png" alt="Fluxo de leitura de placa VisionGate" />
+      </div>
+    </section>
+
+    <section class="section" id="relatorios">
+      <div class="section-header reveal">
+        <span>05 · Histórico e relatórios</span>
+        <h2>REGISTROS CONSULTÁVEIS PARA AUDITORIA.</h2>
+        <p>
+          Além do monitoramento em tempo real, o VisionGate mantém informações
+          para consulta, conferência e exportação.
+        </p>
+      </div>
+
+      <div class="comparison-grid">
+        <article class="comparison-card positive reveal">
+          <div class="card-icon">✓</div>
+          <h3>Histórico</h3>
+          <ul>
+            <li>Consulta por placa</li>
+            <li>Data e hora da captura</li>
+            <li>Câmera de origem</li>
+            <li>Imagem vinculada ao registro</li>
+            <li>Status do acesso</li>
+          </ul>
+        </article>
+
+        <article class="comparison-card positive reveal">
+          <div class="card-icon">📁</div>
+          <h3>Exportação CSV</h3>
+          <ul>
+            <li>Relatório para análise externa</li>
+            <li>Organização dos eventos</li>
+            <li>Base para auditoria operacional</li>
+            <li>Compartilhamento com responsáveis</li>
+            <li>Controle documental da portaria</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="contact-copy reveal">
+        <span class="section-label">Contato</span>
+        <h2>Quer conhecer o VisionGate funcionando?</h2>
+        <p>
+          Envie uma mensagem para solicitar uma apresentação, tirar dúvidas ou
+          conversar sobre uso do sistema em portarias, empresas e operações de
+          segurança.
+        </p>
+
+        <div class="contact-highlights">
+          <div>
+            <strong>Tour visual</strong>
+            <span>Explicação tela por tela</span>
+          </div>
+
+          <div>
+            <strong>Demonstração técnica</strong>
+            <span>Funcionamento do OCR e dashboard</span>
+          </div>
+
+          <div>
+            <strong>Contato direto</strong>
+            <span>Mensagem automática pelo WhatsApp</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lead-card reveal">
+        <div class="lead-badge">Solicitar apresentação</div>
+        <h3>Fale sobre o VisionGate</h3>
+        <p>Preencha os dados e envie a mensagem pelo WhatsApp.</p>
+
+        <form id="leadForm">
+          <input type="text" id="nome" placeholder="Nome completo" required />
+          <input type="tel" id="telefone" placeholder="Telefone / WhatsApp" required />
+          <input type="email" id="email" placeholder="E-mail" required />
+          <input type="text" id="empresa" placeholder="Empresa / Organização" required />
+
+          <select id="interesse" required>
+            <option value="">O que deseja conhecer?</option>
+            <option>Funcionamento do VisionGate</option>
+            <option>Demonstração da dashboard</option>
+            <option>Leitura de placas/OCR</option>
+            <option>Controle de cancela</option>
+            <option>Uso em portaria ou empresa</option>
+          </select>
+
+          <textarea id="mensagem" placeholder="Mensagem opcional"></textarea>
+
+          <button type="submit">Enviar pelo WhatsApp</button>
+        </form>
+
+        <small>Ao enviar, o WhatsApp será aberto com a mensagem preenchida.</small>
+      </div>
+    </section>
+
+    <section class="cta-final reveal">
+      <h2>PRONTO PARA MODERNIZAR O CONTROLE DE ACESSO DA SUA OPERAÇÃO?</h2>
+      <p>
+        Solicite uma demonstração do VisionGate e veja como a leitura automática
+        de placas pode transformar a segurança, rastreabilidade e eficiência
+        operacional da sua empresa.
+      </p>
+      <a href="#tour">SOLICITAR DEMONSTRAÇÃO</a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <img src="images/icon.png" alt="VisionGate" />
+      <strong>VisionGate</strong>
+    </div>
+
+    <p>VisionGate © 2026 — Sistema inteligente de leitura de placas e controle de acesso.</p>
+  </footer>
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/5521992076599?text=Olá! Tenho interesse em conhecer o VisionGate."
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar no WhatsApp"
+  >
+    WhatsApp
+  </a>
+  <a 
+  class="-instagram"
+  href="https://www.instagram.com/kevinb.dantas?utm_source=qr&igsh=ZHkwNm16cG9kNndo"
+  target="_blank"
+  rel="noopener"
+  aria-label="Fala no Instagram"
+  >
+  Instagram
+</a>
+
+  
+
+
+  <div class="success-modal" id="successModal">
+    <div>
+      <button id="closeModal" aria-label="Fechar">×</button>
+      <h3>Mensagem preparada!</h3>
+      <p>O WhatsApp será aberto com sua mensagem para o VisionGate.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
