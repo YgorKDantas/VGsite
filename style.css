@@ -1856,6 +1856,7 @@ footer {
     left: 16px;
     right: 16px;
     text-align: center;
+    bottom: 80px;
   }
 }
 .lead-card select {
